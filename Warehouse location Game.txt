@@ -1,0 +1,61 @@
+Star
+  Current Rm= 'Safe room'
+     Print 'You are in Safe room. You win.'
+Begin Loop
+  Input 'Which direction do you want to go?'
+    if Current Rm is 'Waiting room'
+    if direction is 'East'
+        Current Rm = 'Production floor'
+           Output 'You are in the Production floor'
+    Else
+           Output 'Invalid direction. Try again'
+
+if Current Rm is 'Waiting room'
+    if direction is 'West'
+        Current Rm = 'Meeting room'
+           Output 'You are in the Meeting room'
+    Else
+           Output 'Invalid direction. Try again'
+
+if Current Rm is 'Waiting room'
+    if direction is 'South'
+        Current Rm = 'Parking Garage'
+           Output 'You are in the Parking Garage'
+    Else
+           Output 'Invalid direction. Try again'
+
+if Current Rm is 'Waiting room'
+    if direction is 'North'
+        Current Rm = 'Hallway to the safe room'
+           Output 'You are in the Hallway to the safe room'
+    Else
+           Output 'Correct direction. Continue'
+
+if Current Rm is 'Hallway to the safe room'
+    if direction is 'East'
+        Current Rm = 'Restroom'
+           Output 'You are in the Restroom'
+    Else
+           Output 'Invalid direction. Try again'
+
+if Current Rm is 'Hallway to the safe room'
+    if direction is 'West'
+        Current Rm = 'Safe room'
+           Output 'You are in the Safe room'
+    Else
+           Output 'Correct direction. You have arrived'
+
+End loop   
+           Output 'Game over'
+Exit loop
+
+
+
+
+
+
+
+
+
+     
+
